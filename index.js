@@ -95,11 +95,6 @@ module.exports = plugin(
 			{ values: theme("animationDelay") },
 		)
 
-		matchUtilities(
-			{ ease: (value) => ({ animationTimingFunction: value }) },
-			{ values: filterDefault(theme("animationTimingFunction")) },
-		)
-
 		addUtilities({
 			".running": { animationPlayState: "running" },
 			".paused": { animationPlayState: "paused" },
